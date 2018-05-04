@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<!-- AUTHOR: ANDREW DE LEON -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Andrew Deleon">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Butter Lane Cupcakes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Grand+Hotel|Medula+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin|Swanky+and+Moo+Moo" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <div id="index-contains">
+        <header>
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html"><img src="image/logotext.png" alt="buttertextlogo"></a>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="nav-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <h2>Home</h2>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">
+                                <h2>Menu</h2>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">
+                                <h2>Classes</h2>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                <h2>Contact</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- lINKS END -->
+            </nav>
+        </header>
+        <div class="container-fluid">
+            <h1 class="h1menu">Choose a preset batch or create your own!</h1>
+            <p class="pmenu">A dozen is $38 or go a la cart for $3.75/each!</p>
+        </div>
+        <!-- TOP DIV -->
+        <div class="container-fluid" id="menu-main">
+            <div class="card-deck">
+                <div class="card mb-4">
+                    <div class="card-body d-flex flex-column">
+                        <img class="card-img-top img-fluid mb-4" src="image/menu/batchclassic.png" alt="classicdozen">
+                        <h2 class="card-title">Classic Dozen</h2>
+                        <p class="card-text">A dozen Butter Lane Classics: Chocolate, Vanilla, Strawberry, Blueberry, Raspberry, Maple Pecan, Honey Cinnamon, Coconut, Caramel, Espresso, Cream Cheese, and the “Elvis” (Peanut Butter on Banana Cake)!</p>
+                        <p class="card-text">*Depending on our Daily Selection. Please call w/ specific requests AND/OR any allergies to ingredients like peanut butter!</p>
+                        <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body d-flex flex-column">
+                        <img class="card-img-top img-fluid mb-4" src="image/menu/batchfruit.jpg" alt="fruit">
+                        <h2 class="card-title">Fruit Lovers</h2>
+                        <p class="card-text">Fruit lovers unite!: Strawberry, Blueberry, Raspberry, Coconut on all 3 cakes!</p>
+                        <p class="card-text">*Depending on our Daily Selection. Please call w/ specific requests AND/OR any allergies to ingredients like peanut butter!</p>
+                        <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body d-flex flex-column">
+                        <img class="card-img-top img-fluid mb-4" src="image/menu/icing6.jpg" alt="icing">
+                        <h2 class="card-title">Icing Half Dozen - $12.00</h2>
+                        <p class="card-text">A Butter Lane Favorite! Our Icing Shot tasting sampler includes 12 of our famous flavors, like Chocolate Sea Salt, Peanut Butter, Coconut, Burnt Caramel, Blueberry, Strawberry, Raspberry…and more!</p>
+                        <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TOP DIV -->
+        <!-- STEP 1 DIV -->
+        <div class="container" id="alacarte">
+            <h1 class="h1importante">Going a-la-carte? Start Below!</h1>
+            <hr>
+            <h1 class="h1menu">Step 1: Choose a Cupcake Base</h1>
+            <p class="pmenu">Choose from Chocolate, Vanilla, or Banana!</p>
+        </div>
+        <div class="container-fluid" id="menu-step1">
+            <div class="row my-flex-card">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-block" id="van">
+                            <p class="pmenu">Vanilla</p>
+                            <a href="#step2" onclick="toggleVanilla();"><img class="imgmenu" src="image/menu/vanvan.png" alt="c-van"></a><br/>
+                            <a href="#step2" onclick="toggleVanilla();">Choose!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-block" id="choc">
+                            <p class="pmenu">Chocolate</p>
+                            <a href="#step2" onclick="toggleChocolate();"><img class="imgmenu" src="image/menu/chocchoc.png" alt="c-choc"></a><br/>
+                            <a href="#step2" onclick="toggleChocolate();">Choose!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-block" id="nana">
+                            <p class="pmenu">Banana</p>
+                            <a href="#step2" onclick="toggleBanana();"><img class="imgmenu" src="image/menu/bancreamchs.png" alt="c-nana"></a><br/>
+                            <a href="#step2" onclick="toggleBanana();">Choose!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- STEP 1 DIV -->
+        <!-- STEP 2 DIV -->
+        <div id="step2">
+            <h1 class="h1menu">Step 2: Pick a Frosting</h1>
+            <p class="pmenu">We rotate frostings based on season!</p>
+        </div>
+        <!-- VANILLA DIV -->
+        <div class="container-fluid" id="display">
+            <div class="container-fluid" id="vanilla-cupcakes" style="display:none;">
+                <div class="card-deck">
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/vanvan.png" alt="vanvan">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Vanilla</h2>
+                            <p class="card-text">Made with fresh vanilla bean.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/vanblue.png" alt="vanblue">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Blueberry</h2>
+                            <p class="card-text">Made with fresh blueberries.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/vanraspb.png" alt="vanrasp">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Raspberry</h2>
+                            <p class="card-text">Made with fresh raspberries.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-md-block d-lg-none">
+                        <!-- wrap every 3 on md-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/vanchoc.png" alt="vanchoc">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Chocolate</h2>
+                            <p class="card-text">Made with decadent milk-chocolate.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="w-100 d-none d-lg-block d-xl-none">
+                        <!-- wrap every 4 on lg-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/vanstraw.png" alt="vanstraw">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Strawberry</h2>
+                            <p class="card-text">Made with fresh strawberries.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-xl-block">
+                        <!-- wrap every 5 on xl-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/vancook.png" alt="vancook">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Cookies &amp; Cream</h2>
+                            <p class="card-text">Our delicious cookies and cream.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="w-100 d-none d-md-block d-lg-none">
+                        <!-- wrap every 3 on md-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/vancreamchs.png" alt="vancreamchs">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Cream Cheese</h2>
+                            <p class="card-text">Our mouth-watering cream cheese frosting.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/vanesp.png" alt="vanesp">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Espresso</h2>
+                            <p class="card-text">Fresh brewed espresso in a frosting.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="w-100 d-none d-lg-block d-xl-none">
+                        <!-- wrap every 4 on lg-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/vanmaple.png" alt="vanmaple">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Maple Pecan</h2>
+                            <p class="card-text">A delicious blend of maple syrup and pecans.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-md-block d-lg-none">
+                        <!-- wrap every 3 on md-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/vanpb.png" alt="vanpb">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Peanut Butter</h2>
+                            <p class="card-text">Fresh batch of peanut butter in a frosting.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- VANILLA DIV -->
+            <!-- CHOCOLATE DIV -->
+            <div class="container-fluid" id="chocolate-cupcakes" style="display:none;">
+                <div class="card-deck">
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/chocchoc.png" alt="chocchoc">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Chocolate</h2>
+                            <p class="card-text">Made with decadent milk-chocolate.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/chocblue.png" alt="chocblue">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Blueberry</h2>
+                            <p class="card-text">Made with fresh blueberries.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/chocrasp.png" alt="choccara">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Raspberry</h2>
+                            <p class="card-text">Made with fresh raspberries.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-md-block d-lg-none">
+                        <!-- wrap every 3 on md-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/chocsea.png" alt="choccin">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Sea Salt Chocolate</h2>
+                            <p class="card-text">Decadent dark chocolate and sea salt.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="w-100 d-none d-lg-block d-xl-none">
+                        <!-- wrap every 4 on lg-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/choccoco.png" alt="choccoco">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Coconut</h2>
+                            <p class="card-text">Made with fresh coconuts.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-xl-block">
+                        <!-- wrap every 5 on xl-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/choccook.png" alt="choccook">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Cookies &amp; Cream</h2>
+                            <p class="card-text">Our delicious cookies and cream.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="w-100 d-none d-md-block d-lg-none">
+                        <!-- wrap every 3 on md-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/choccrmchs.png" alt="choccrmchs">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Cream Cheese</h2>
+                            <p class="card-text">Our mouth-watering cream cheese frosting.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/chocesp.png" alt="chocesp.png">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Espresso</h2>
+                            <p class="card-text">Fresh brewed espresso in a frosting.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="w-100 d-none d-lg-block d-xl-none">
+                        <!-- wrap every 4 on lg-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/chocmaple.png" alt="chocmaple.png">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Maple Pecan</h2>
+                            <p class="card-text">A delicious blend of maple syrup and pecans.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-md-block d-lg-none">
+                        <!-- wrap every 3 on md-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/chocpb.png" alt="chocpb.png">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Peanut Butter</h2>
+                            <p class="card-text">Fresh batch of peanut butter in a frosting.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CHOCOLATE DIV -->
+            <!-- BANANA DIV -->
+            <div class="container-fluid" id="banana-cupcakes" style="display:none;">
+                <div class="card-deck">
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/bancreamchs.png" alt="bancreamchs">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Cream Cheese</h2>
+                            <p class="card-text">Our mouth-watering cream cheese frosting.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/bananasea.png" alt="bansea">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Sea Salt Chocolate</h2>
+                            <p class="card-text">Decadent dark chocolate and sea salt.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/banblue.png" alt="banblue">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Blueberry</h2>
+                            <p class="card-text">Made with fresh blueberries.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-md-block d-lg-none">
+                        <!-- wrap every 3 on md-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/banesp.png" alt="banesp">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Espresso</h2>
+                            <p class="card-text">Fresh brewed espresso in a frosting.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="w-100 d-none d-lg-block d-xl-none">
+                        <!-- wrap every 4 on lg-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/banchoc.png" alt="banchoc">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Chocolate</h2>
+                            <p class="card-text">Made with decadent milk-chocolate.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-xl-block">
+                        <!-- wrap every 5 on xl-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/banstraw.png" alt="banstraw">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Strawberry</h2>
+                            <p class="card-text">Made with fresh strawberries.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="w-100 d-none d-md-block d-lg-none">
+                        <!-- wrap every 3 on md-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/bancoco.png" alt="bancoco">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Coconut</h2>
+                            <p class="card-text">Made with fresh coconuts.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/bancook.png" alt="bancook">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Cookies &amp; Cream</h2>
+                            <p class="card-text">Our delicious cookies and cream.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none">
+                        <!-- wrap every 2 on sm-->
+                    </div>
+                    <div class="w-100 d-none d-lg-block d-xl-none">
+                        <!-- wrap every 4 on lg-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/banpb.png" alt="banpb">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Peanut Butter</h2>
+                            <p class="card-text">Nicknamed the Elvis, our #1 seller!</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-md-block d-lg-none">
+                        <!-- wrap every 3 on md-->
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="image/menu/banrasp.png" alt="banrasp">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title">Raspberry</h2>
+                            <p class="card-text">Made with fresh raspberries.</p>
+                            <button type="button" class="btn btn-default mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BANANA DIV -->
+
+        </div>
+        <!-- STEP 2 DIV -->
+        <div class="container-fluid" id="backtotop">
+            <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span>Return to Top</a>
+        </div>
+    </div>
+    <!--END OF CONTAINER -->
+
+    <!--Footer-->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a class="logo" href="#"><img src= "image/logobuttersmall.png" alt="butterlogo"></a>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Navigate</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu </a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>More Info</h5>
+                    <ul>
+
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="social-networks">
+                        <a href="https://twitter.com/butterlane" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/butterlane/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/butterlane/?hl=en" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Contact us</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/Footer-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        function toggleVanilla() {
+            var dataDiv = document.getElementById("vanilla-cupcakes");
+            var chocDiv = document.getElementById("chocolate-cupcakes");
+            var banDiv = document.getElementById("banana-cupcakes");
+            chocDiv.style.display = "none";
+            banDiv.style.display = "none";
+            if (dataDiv.style.display == "none") {
+                dataDiv.style.display = "block";
+                $(".displayed").append($("vanilla-cupcakes"));
+            } else {
+                dataDiv.style.display = "none";
+            }
+        }
+
+    </script>
+    <script>
+        function toggleChocolate() {
+            var dataDiv = document.getElementById("chocolate-cupcakes");
+            var vanDiv = document.getElementById("vanilla-cupcakes");
+            var banDiv = document.getElementById("banana-cupcakes");
+            vanDiv.style.display = "none";
+            banDiv.style.display = "none";
+            if (dataDiv.style.display == "none") {
+                dataDiv.style.display = "block";
+                $(".displayed").append($("chocolate-cupcakes"));
+            } else {
+                dataDiv.style.display = "none";
+            }
+        }
+
+    </script>
+    <script>
+        function toggleBanana() {
+            var dataDiv = document.getElementById("banana-cupcakes");
+            var vanDiv = document.getElementById("vanilla-cupcakes");
+            var chocDiv = document.getElementById("chocolate-cupcakes");
+            vanDiv.style.display = "none";
+            chocDiv.style.display = "none";
+            if (dataDiv.style.display == "none") {
+                dataDiv.style.display = "block";
+                $(".displayed").append($("banana-cupcakes"));
+            } else {
+                dataDiv.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
